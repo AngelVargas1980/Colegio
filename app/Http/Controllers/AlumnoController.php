@@ -22,7 +22,7 @@ class AlumnoController extends Controller
         //pagina de inicio
         //$datos = Personas::all();
         //$datos = Personas::orderBy('id', 'desc')->paginate(3);
-        $datos = Alumno::orderBy('id', 'asc')->paginate(2);
+        $datos = Alumno::orderBy('id', 'asc')->paginate(25);
         return view('alumno/inicio-alumno', compact('datos'));
     }
 
